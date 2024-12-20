@@ -39,6 +39,11 @@
     display: flex;
     align-items: center;
     gap: 50px; /* Adds space between name and logo */
+    margin: 20px 0;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   }
   
   .branding h1 {
@@ -77,8 +82,7 @@
   #name{
     text-decoration: none;
     color: inherit;
-
-    color: white;
+    color: #555;
     text-decoration: none;
     padding: 5px 10px;
     border-radius:2px;
@@ -87,17 +91,20 @@
 
   #name:hover{
     background-color: #555;
+    color:white;
 
   }
 
   main {
-    margin-top: 100px;
-    margin-right: 50px;
-    margin-left: 50px;
-    background: rgb(209, 205, 205);
+    margin-top: 120px;
+    margin-right: 90px;
+    margin-left: 90px;
+    /* background: rgb(209, 205, 205); */
+    background: rgb(128, 127, 127);
     padding: 20px;
     border-radius: 16px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    min-width:350px;
   }
 
   footer {
@@ -110,10 +117,12 @@
     font-size: 12px;
   }
 
-  .format {
-    border: 3px solid black;
+  .heading {
+    text-align: center;
+    border: 5px dashed black;
+    padding-top: 20px;
+    background-color: rgb(238, 237, 237);
   }
-
 
   @media (max-width: 800px) {
     nav h1 {
@@ -134,6 +143,15 @@
     }
   }
 
+  #headshot {
+    border-radius: 20%; /* Makes the image circular */
+    width: 100%; /* Default width for responsiveness */
+    max-width: 450px; /* Limits the maximum size of the image */
+    height: auto; /* Maintains aspect ratio */
+    object-fit: cover; /* Ensures the image scales nicely within its container */
+    margin-right: 6%;
+  }
+
 
   /* Check if this CSS would work with new .format left/right div */
   .format {
@@ -141,9 +159,9 @@
     flex-wrap: wrap; /* Allows items to wrap into new rows on smaller screens */
     justify-content: space-between; /* Spaces columns equally on larger screens */
     align-items: center; /* Centers items vertically */
-    border: 3px solid black;
-    padding: 20px;
+    padding: 30px 50px;
     gap: 20px; /* Adds space between columns */
+    
   }
   
   .format .left,
@@ -153,15 +171,26 @@
   }
   
   .format .left {
-    text-align: left; /* Aligns content to the left */
-  }
+    flex: 1; /* Allocates a smaller proportion of space to the left column */
+    max-width: 40%; /* Restricts the maximum width of the left column */
+    display: flex; /* Enables flexbox layout for the container */
+    flex-direction: column; /* Stacks child elements vertically */
+    gap: 10px; /* Adds spacing between stacked elements */
+    text-align: center; /* Aligns content to the left */
+    margin-left: 3%;
+}
+  
   
   .format .right {
-    text-align: right; /* Aligns content to the right */
+    display: flex; /* Enables flexbox on the container */
+    justify-content: center; /* Horizontally centers the image */
+    align-items: center; /* Vertically centers the image */
+    text-align: center; /* Ensures any additional content inside is centered */
+
   }
   
   /* Center all elements on smaller screens */
-  @media (max-width: 600px) {
+  @media (max-width: 400px) {
     .format {
       flex-direction: column; /* Stacks columns vertically */
       align-items: center; /* Centers elements horizontally */
@@ -169,6 +198,76 @@
   
     .format .left,
     .format .right {
+      width: 100%; /* Takes full width of the container */
+      max-width: none; /* Ensures no width restriction */
       text-align: center; /* Centers text for smaller screens */
     }
+  
+    .format .right {
+      margin-top: 20px; /* Adds some spacing between left and right sections */
+    }
+  }
+
+  form {
+    width: 60%;
+    margin: 20px auto; /* Centers the form */
+    padding: 20px;
+    background: rgb(128, 127, 127); /* Matches the main background */
+    border-radius: 10px; /* Smooth rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  }
+  
+  form label {
+    display: block; /* Ensures labels are on their own lines */
+    margin-bottom: 5px;
+    color: white; /* Matches the color scheme */
+    font-weight: bold;
+  }
+  
+  form input[type="text"],
+  form input[type="email"],
+  form textarea {
+    width: 100%; /* Full width */
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 2px solid #333; /* Matches header background */
+    border-radius: 5px; /* Rounded corners */
+    background: #555; /* Input background */
+    color: white; /* Text color */
+    font-size: 1rem;
+    transition: border-color 0.3s ease, color 0.3s ease;
+  }
+  
+  form input[type="text"]:focus,
+  form input[type="email"]:focus,
+  form textarea:focus {
+    border-color: white; /* Highlighted border on focus */
+    outline: none;
+    background: #333; /* Darker background on focus */
+  }
+  
+  form textarea {
+    resize: none; /* Prevents resizing */
+  }
+  
+  form button {
+    display: inline-block;
+    background: #333; /* Matches header background */
+    color: white;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  form button:hover {
+    background: rgb(155, 162, 170); /* White background on hover */
+    color: #333; /* Inverts text color */
+  }
+  
+  form button:active {
+    background: #555; /* Slightly lighter background on click */
+    color: white; /* Reverts text to white */
   }
