@@ -271,3 +271,15 @@
     background: #555; /* Slightly lighter background on click */
     color: white; /* Reverts text to white */
   }
+
+  .icons img {
+    width: 100px; /* Adjust the size of the icons */
+    height: auto; /* Maintain aspect ratio */
+    margin: 10px 50px; /* Add some spacing around the icons */
+    border-radius: 5px; /* Optional: Add rounded corners */
+    transition: transform 0.2s ease; /* Add a subtle zoom effect on hover */
+  }
+  
+  .icons img:hover {
+    transform: scale(1.1); /* Slightly enlarge the icon on hover */
+  }
