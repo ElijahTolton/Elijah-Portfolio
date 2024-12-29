@@ -103,7 +103,7 @@
     padding: 20px;
     border-radius: 16px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    min-width:350px;
+    min-width:450px;
   }
 
   footer {
@@ -128,7 +128,7 @@
     font-size: 30px;
   }
 
-  @media (max-width: 800px) {
+  @media (max-width: 900px) {
     nav h1 {
       display: none;
     }
@@ -165,6 +165,8 @@
     align-items: center; /* Centers items vertically */
     padding: 30px 50px;
     gap: 20px; /* Adds space between columns */
+    align-items: stretch; /* Ensures all flex items have equal height */
+
     
   }
   
@@ -180,7 +182,8 @@
     display: flex; /* Enables flexbox layout for the container */
     flex-direction: column; /* Stacks child elements vertically */
     gap: 10px; /* Adds spacing between stacked elements */
-    text-align: center; /* Aligns content to the left */
+    text-align: left; /* Aligns content to the left */
+    margin-right: 10%;
     margin-left: 3%;
 }
   
@@ -190,11 +193,13 @@
     justify-content: center; /* Horizontally centers the image */
     align-items: center; /* Vertically centers the image */
     text-align: center; /* Ensures any additional content inside is centered */
+    flex-direction: column; /* Stacks columns vertically */
+    align-items: center; /* Centers elements horizontally */
 
   }
   
   /* Center all elements on smaller screens */
-  @media (max-width: 400px) {
+  @media (max-width: 1200px) {
     .format {
       flex-direction: column; /* Stacks columns vertically */
       align-items: center; /* Centers elements horizontally */
@@ -209,6 +214,7 @@
   
     .format .right {
       margin-top: 20px; /* Adds some spacing between left and right sections */
+      margin-right: 30px;
     }
   }
 
@@ -286,4 +292,42 @@
   
   .icons img:hover {
     transform: scale(1.1); /* Slightly enlarge the icon on hover */
+  }
+
+  li{ 
+    text-align: left;
+    margin-top:3px;
+  }
+
+  img{
+    width:100%;
+    height:auto;
+  }
+
+  .bigC {
+    display: flex; /* Enables Flexbox layout */
+    justify-content: center; /* Centers items horizontally */
+    align-items: center; /* Centers items vertically */
+  }
+
+  .bigC ul {
+    margin: 0;
+    padding: 0;
+  }
+  .bigC li {
+    text-align: center; /* Ensures text within each list item is centered */
+  }
+
+
+  .left #Portfolio h2 a {
+    color:#333;
+    text-decoration: underline; /* Remove underline */
+    position: relative; /* Enable movement using `top` */
+    transition: color 0.3s, top 0.3s; /* Smooth transition for color and position */
+  }
+  
+  .left #Portfolio h2 a:hover,
+  .left #Portfolio h2 a:active {
+    color: white; /* Change text color to white */
+    top: -5px; /* Move text slightly upward */
   }
