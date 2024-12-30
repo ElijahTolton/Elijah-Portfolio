@@ -319,15 +319,15 @@
   }
 
 
-  .left #Portfolio h2 a {
+  .left h2 a {
     color:#333;
     text-decoration: underline; /* Remove underline */
     position: relative; /* Enable movement using `top` */
-    transition: color 0.3s, top 0.3s; /* Smooth transition for color and position */
+    transition: color 0.3s, top 0.8s; /* Smooth transition for color and position */
   }
   
-  .left #Portfolio h2 a:hover,
-  .left #Portfolio h2 a:active {
-    color: white; /* Change text color to white */
+  .left h2 a:hover,
+  .left h2 a:active {
+    color: #4f496e; /* Change text color to white */
     top: -5px; /* Move text slightly upward */
   }
