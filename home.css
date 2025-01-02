@@ -331,3 +331,37 @@
     color: #4f496e; /* Change text color to white */
     top: -5px; /* Move text slightly upward */
   }
+
+  .Languages {
+    list-style-type: disc; /* Optional: Keeps bullets */
+    margin-left: 25%;
+  }
+  
+  .Languages li {
+    font-size: 1.5em; /* Makes the text larger */
+    font-weight: bold; /* Makes the text bold */
+    margin-bottom: 5px; /* Adds space between items */
+  }
+
+  .Logos {
+    display: flex;
+    flex-wrap: wrap; /* Allows wrapping to a new line */
+    justify-content: center; /* Centers content horizontally */
+    gap: 20px; /* Adds space between items */
+    max-width: 500px; /* Adjust as needed for desired column width */
+    margin: 0 auto; /* Centers the container */
+    margin-right: 8%;
+  }
+
+ 
+
+  .Logos img {
+    flex: 1 1 calc(50% - 20px); /* Each image takes 50% of the width minus the gap */
+    max-width: 100px; /* Ensures images are responsive */
+    height: auto; /* Maintains aspect ratio */
+    object-fit: contain; /* Adjusts the image fitting */
+  }
+
+  #CSharp{
+    width: 200px;
+  }
