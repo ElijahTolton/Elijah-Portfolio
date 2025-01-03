@@ -9,7 +9,7 @@
     line-height: 1.6;
     padding: 20px;
     background-image: url('background.jpg');
-    background-size: 100vw 100vh; /* Image scales based on the viewport width and height */
+    background-size: cover; /* Image scales based on the viewport width and height */
     background-repeat: no-repeat, repeat, repeat;
     background-attachment: fixed;
     color: #333;
@@ -103,7 +103,7 @@
     padding: 20px;
     border-radius: 16px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    min-width:450px;
+    min-width:400px;
   }
 
   footer {
