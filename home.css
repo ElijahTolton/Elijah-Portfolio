@@ -387,6 +387,6 @@
 
   @media(max-width: 700px){
     #branding{
-      display:none;
+      display: none;
     }
   }
