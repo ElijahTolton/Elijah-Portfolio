@@ -103,7 +103,7 @@
     padding: 20px;
     border-radius: 16px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    min-width:400px;
+    min-width:300px;
   }
 
   footer {
@@ -137,7 +137,7 @@
     }
   }
 
-  /* @media (min-width: 768px) {
+  @media (min-width: 768px) {
     nav ul {
       gap: 30px;
     }
@@ -145,7 +145,17 @@
     main {
       padding: 40px;
     }
-  } */
+  }
+
+  @media (min-width: 600px) {
+    nav ul {
+      gap: 10px;
+    }
+
+    main {
+      padding: 20px;
+    }
+  }
 
   #headshot {
     border-radius: 20%; /* Makes the image circular */
@@ -375,47 +385,8 @@
     margin-left: 4%;
   }
 
-  @media (max-width: 800px) {
-    .heading {
-      text-align: center;
-      padding: 20px;
-      margin: 0 auto;
-      width: 90%;  /* Ensure the heading takes up less space on smaller screens */
-      border: none;  /* Remove the dashed border for a cleaner look */
-    }
-  }
-
-  /* Adjust nav bar on mobile. */
-  @media (max-width: 800px) {
-    nav {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: space-between;
-      padding: 10px 0;
-      height: auto;  /* Allow height to adjust to content */
-    }
-    
-    nav ul {
-      display: flex;
-      flex-direction: column;  /* Stack the nav links vertically */
-      align-items: center;
-      width: 100%;  /* Ensure full width */
-      padding-left: 0;
-    }
-    
-    nav ul li {
-      margin: 10px 0;
-      text-align: center;  /* Center the nav items */
-    }
-  
-    nav h1 {
-      font-size: 1.2rem;
-      display: block;  /* Ensure the logo/heading is visible */
-    }
-  
-    .branding {
-      gap: 30px;  /* Reduce the gap between the logo and the title */
-      justify-content: center;
+  @media(max-width: 700px){
+    #branding{
+      display:none;
     }
   }
