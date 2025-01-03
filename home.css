@@ -27,13 +27,28 @@
     z-index: 1000;
   }
 
+  /* nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    height: 100px;
+  } */
+
   nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
     height: 100px;
-  }
+    width: 100%; /* Makes the nav span the full width of the viewport */
+    box-sizing: border-box; /* Ensures padding is included in the width calculation */
+    position: fixed; /* Optional: Keeps the nav bar fixed at the top of the screen */
+    top: 0; /* Aligns the nav to the top of the viewport */
+    left: 0; /* Aligns the nav to the left of the viewport */
+    background-color: #fff; /* Optional: Adds a background color */
+    z-index: 1000; /* Ensures the nav bar stays above other elements */
+}
 
   .branding {
     display: flex;
