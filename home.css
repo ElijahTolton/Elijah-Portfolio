@@ -137,7 +137,7 @@
     }
   }
 
-  @media (min-width: 768px) {
+  /* @media (min-width: 768px) {
     nav ul {
       gap: 30px;
     }
@@ -145,7 +145,7 @@
     main {
       padding: 40px;
     }
-  }
+  } */
 
   #headshot {
     border-radius: 20%; /* Makes the image circular */
@@ -373,4 +373,14 @@
 
   .ClassLearns ul{
     margin-left: 4%;
+  }
+
+  @media (max-width: 900px) {
+    .heading {
+      text-align: center;
+      padding: 20px;
+      margin: 0 auto;
+      width: 90%;  /* Ensure the heading takes up less space on smaller screens */
+      border: none;  /* Remove the dashed border for a cleaner look */
+    }
   }
