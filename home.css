@@ -121,7 +121,6 @@
     border: 5px dashed black;
     padding-top: 20px;
     background-color: rgb(189, 193, 202);
-    min-width:300px;
   }
 
   .heading h2{
@@ -220,6 +219,15 @@
     }
   }
 
+  @media(max-width: 500px){
+    .format .left,
+    .format .right {
+      width: 100%; /* Takes full width of the container */
+      max-width: none; /* Ensures no width restriction */
+      text-align: left; /* Centers text for smaller screens */
+      margin: 0px;
+    }
+  }
   form {
     width: 60%;
     margin: 20px auto; /* Centers the form */
