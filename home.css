@@ -147,16 +147,6 @@
     }
   }
 
-  @media (min-width: 600px) {
-    nav ul {
-      gap: 10px;
-    }
-
-    main {
-      padding: 20px;
-    }
-  }
-
   #headshot {
     border-radius: 20%; /* Makes the image circular */
     width: 100%; /* Default width for responsiveness */
