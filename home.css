@@ -121,6 +121,7 @@
     border: 5px dashed black;
     padding-top: 20px;
     background-color: rgb(189, 193, 202);
+    min-width:300px;
   }
 
   .heading h2{
@@ -210,6 +211,7 @@
       width: 100%; /* Takes full width of the container */
       max-width: none; /* Ensures no width restriction */
       text-align: center; /* Centers text for smaller screens */
+      margin: 0px;
     }
   
     .format .right {
