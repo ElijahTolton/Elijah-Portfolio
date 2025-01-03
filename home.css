@@ -365,3 +365,12 @@
   #CSharp{
     width: 200px;
   }
+
+  .ClassLearns > li{
+    text-decoration: none;
+    font-weight: 750;
+  }
+
+  .ClassLearns ul{
+    margin-left: 4%;
+  }
