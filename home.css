@@ -123,18 +123,6 @@
     background-color: rgb(189, 193, 202);
   }
 
-  /* Center the .heading in the middle of the screen for mobile */
-@media (max-width: 768px) {
-  .heading {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      width: 90%; /* Optional: Adjust the width for better mobile appearance */
-      box-sizing: border-box; /* Ensures padding is included in width */
-  }
-}
-
   .heading h2{
     font-weight: 300px;
     font-size: 30px;
