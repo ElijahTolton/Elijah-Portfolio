@@ -226,6 +226,7 @@
       max-width: none; /* Ensures no width restriction */
       text-align: left; /* Centers text for smaller screens */
       margin: 0px;
+      padding:0px;
     }
   }
   form {
